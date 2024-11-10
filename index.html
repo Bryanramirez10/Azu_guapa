@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingüino Mensajero para mi Azu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-container">
+        <h1>Para mi Azu hermosa💕</h1>
+        <br>
+        <p class="instructions">Amor toca el pinguino para que te diga algunas cositas jijijij</p>
+        <br><br>
+        <div id="penguin-container">
+            <img id="penguin" src="Pinguino.png" alt="Pingüino Mensajero">
+            <div id="message-bubble"></div>
+        </div>
+        
+        <button id="restart-btn" onclick="restartGame()">Reiniciar</button>
+        <!-- Botón "Siguiente" para cambiar de ventana -->
+        <button id="next-btn" onclick="goToNextPage()" style="display: none;">Siguiente</button>
+    </div>
+
+    <audio id="background-music" autoplay loop>
+        <source src="Cancion.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
